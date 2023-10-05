@@ -27,7 +27,6 @@ const useFetch = (endPoint, query) => {
       setIsLoading(true);
       // const response = await axios.request(options);
       return new Promise((res, rej) => {
-        console.log('endPoint -- ', endPoint);
         setTimeout(() => {
           if(endPoint === 'search') res(mockSearchData);
           else if(endPoint === 'job-details') res(mockJobDetailsData);
